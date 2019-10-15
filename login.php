@@ -6,7 +6,28 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<title>Login Page</title>
 	</head>
-	<body>
+	<style>
+		html, body {
+			background-color: red;
+		}
+
+		.animasi {
+			animation-name: bodyanim;
+			animation-duration: 1s;
+		}
+
+		@keyframes bodyanim {
+			from {
+				transform: translate(-500px, 0px);
+				opacity: 0;
+			}
+			to {
+				transform: translate(0px, 0px);
+				opacity: 1;
+			}
+		}
+	</style>
+	<body class="animasi">
 		<br><br>
 <?php
 

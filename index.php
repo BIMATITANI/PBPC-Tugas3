@@ -7,6 +7,27 @@
 		<title>Hello, world!</title>
 	</head>
 	<body>
+	<style>
+		html, body {
+			background-color: red;
+		}
+
+		.animasi {
+			animation-name: bodyanim;
+			animation-duration: 1s;
+		}
+
+		@keyframes bodyanim {
+			from {
+				transform: translate(-500px, 0px);
+				opacity: 0;
+			}
+			to {
+				transform: translate(0px, 0px);
+				opacity: 1;
+			}
+		}
+	</style>
 <?php
 
 session_start();
@@ -39,7 +60,7 @@ echo '
 			</div>
 		</nav>
 		<div class="container-fluid">
-			<h2>Welcome '.$_SESSION['jeneng'].'</h2>
+			<h2 class="animasi">Welcome '.$_SESSION['jeneng'].'</h2>
 		</div>
 ';
 ?>
